@@ -1,0 +1,118 @@
+<!-- /free-thanks (2026-10-26): the guide, the course (YouTube embed, so watches count as channel views), then the whole free library (8 PDFs). Backup: _backup-2026-10-26/ -->
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+.jt{font-family:Inter,system-ui,sans-serif;color:#111;max-width:760px;margin:0 auto;padding:40px 20px 50px;text-align:center;-webkit-font-smoothing:antialiased}
+.jt *{box-sizing:border-box;margin:0;padding:0}
+.jt .k{font-weight:800;letter-spacing:.28em;font-size:12px;color:#FF0000;text-transform:uppercase}
+.jt h1{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:clamp(40px,7vw,60px);line-height:1.04;margin-top:12px}
+.jt h1 em{font-style:italic}
+.jt .sub{font-size:17px;color:#555;margin-top:12px;line-height:1.55}
+.jt .box{margin-top:34px;padding:26px 22px;border:1px solid #e6e6e6;border-radius:18px;text-align:left;box-shadow:0 24px 50px -36px rgba(0,0,0,.4)}
+.jt .n{font-family:"Instrument Serif",Georgia,serif;font-style:italic;color:#FF0000;font-size:22px}
+.jt h2{font-family:"Instrument Serif",Georgia,serif;font-weight:400;font-size:34px;line-height:1.1;margin-top:2px}
+.jt .box p{font-size:16px;color:#444;line-height:1.55;margin-top:8px}
+.jt .row{display:flex;gap:20px;align-items:center;margin-top:16px}
+.jt .row img{width:44%;border-radius:10px}
+.jt .btn{display:inline-block;background:#FF0000;color:#fff!important;text-decoration:none;font-weight:800;letter-spacing:.06em;font-size:15px;padding:15px 24px;border-radius:12px;margin-top:14px;box-shadow:0 14px 26px -14px rgba(255,0,0,.8)}
+.jt .vid{position:relative;padding-top:56.25%;margin-top:16px;border-radius:12px;overflow:hidden;background:#000}
+.jt .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.jt .yt{display:inline-block;margin-top:14px;font-weight:700;font-size:14px;color:#111!important}
+.jt .fine{font-size:12px;color:#999;margin-top:30px;line-height:1.5}
+.jt .lib{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:16px}
+.jt .lib a{display:grid;gap:6px;align-content:start;text-decoration:none;color:#111!important}
+.jt .lib img{width:100%;aspect-ratio:340/440;object-fit:cover;border-radius:8px;box-shadow:0 10px 18px -12px rgba(0,0,0,.6)}
+.jt .lib b{font-size:12.5px;line-height:1.25}
+.jt .lib span{font-size:12px;font-weight:800;color:#FF0000}
+@media(max-width:560px){.jt .lib{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.jt .row{flex-direction:column;align-items:flex-start}.jt .row img{width:100%}}
+.jt details.pr{margin-top:28px;border:2px solid #111;border-radius:18px;text-align:left;padding:18px 20px}
+.jt details.pr summary{cursor:pointer;font-weight:800;font-size:17px;list-style:none}
+.jt details.pr summary::-webkit-details-marker{display:none}
+.jt details.pr summary span{color:#FF0000}
+.jt .pr p{font-size:15px;color:#444;line-height:1.55;margin-top:10px}
+.jt .pr pre{white-space:pre-wrap;font-family:Inter,system-ui,sans-serif;font-size:14px;line-height:1.5;background:#f4f4f4;border-radius:12px;padding:16px;margin-top:12px;color:#111}
+.jt .pr button{background:#FF0000;color:#fff;border:0;font-weight:800;letter-spacing:.06em;font-size:15px;padding:14px 22px;border-radius:12px;margin-top:12px;cursor:pointer}
+</style>
+<div class="jt">
+  <div class="k">You're in</div>
+  <h1>Your 24-Hour Blueprint <em>is ready.</em></h1>
+  <p class="sub">Everything is below. Start with the guide and the course, then grab the rest. I also emailed you the guide and the course, so you'll always have them.</p>
+  <a class="pr" href="https://drive.google.com/file/d/1v5i9kqoGs_E5lOzxx0rKkJK9pF_ZI3S5/view" target="_blank" style="display:block;margin-top:28px;border:2px solid #111;border-radius:18px;text-align:left;padding:18px 20px;font-weight:800;font-size:17px;color:#111!important;text-decoration:none">Commented CSV? <span style="color:#FF0000">Tap here for the CSV backup guide</span></a>
+  <details class="pr" id="prompt" style="margin-top:12px">
+    <summary>Commented CLAUDE? <span>Tap here for the ManyChat prompt</span></summary>
+    <p>This is the exact prompt to build your own comment-to-DM bot with Claude. Copy it, paste it into Claude, and it walks you through every step.</p>
+    <button type="button" onclick="navigator.clipboard.writeText(document.getElementById('prtxt').innerText);this.innerText='COPIED'">COPY THE PROMPT</button>
+    <pre id="prtxt">I want to build my own comment-to-DM bot for Instagram, like ManyChat, without paying for a tool.
+
+What it should do: when someone comments a keyword on one of my posts, they automatically get a DM from me with a button. When they tap the button, they get a second message with my link.
+
+About me:
+- I am not a developer. Explain every step like I&#x27;ve never done it before.
+- My Instagram is a professional (Business or Creator) account.
+- I want to use free tools wherever possible.
+
+Please build this with me using:
+- Instagram&#x27;s official API (the &quot;Instagram API with Instagram Login&quot;), so my account stays safe. No scraping, no unofficial apps.
+- A Meta developer app connected to my Instagram account.
+- A free host for the code (Cloudflare Pages with Functions, or another free option you think is simpler for me).
+- A webhook that listens for new comments and new messages.
+
+Rules for how you guide me:
+1. Go one step at a time. Give me one step, wait for me to say &quot;done&quot; or send a screenshot, then give me the next one.
+2. Tell me exactly where to click, using the names I&#x27;ll see on screen.
+3. Never ask me to paste passwords, tokens or secret keys into this chat. Show me how to save them as secrets in the hosting tool instead.
+4. Write all the code for me, and tell me exactly which file each piece goes in.
+5. When something breaks, ask me for the exact error or a screenshot, then fix it.
+6. When it works, help me test it end to end: I comment the keyword from a second account, the DM arrives, I tap the button, the link arrives.
+
+Start by asking me:
+- What keyword I want people to comment.
+- What the first DM should say, and what the button should say.
+- What link I want to send after they tap.
+
+Then give me step 1.</pre>
+  </details>
+
+
+  <div class="box">
+    <div class="n">Start here</div>
+    <h2>The beginner's guide</h2>
+    <div class="row"><img src="https://justin-vault-assets.pages.dev/free/free-mockup.webp" alt="How to Start Digital Marketing guide">
+      <div><p>The first 5 steps and a 7-day plan you can check off. Read it in 10 minutes.</p>
+      <a class="btn" href="https://drive.google.com/file/d/1CLKHEjBg2R_1Fyl8gI48u_EHQsiHr8J1/view" target="_blank">OPEN THE GUIDE</a></div></div>
+  </div>
+
+  <div class="box">
+    <div class="n">Then watch</div>
+    <h2>The full course: build a digital product with Claude</h2>
+    <p>Watch me find, write, design and launch a digital product with Claude, start to finish.</p>
+    <div class="vid"><iframe src="https://www.youtube-nocookie.com/embed/oqnr8AeJFW8?rel=0" title="Free full course: build a digital product with Claude" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe></div>
+    <a class="yt" href="https://www.youtube.com/watch?v=oqnr8AeJFW8" target="_blank">Watch it on YouTube and subscribe ›</a>
+  </div>
+
+  <div class="box">
+    <div class="n">The rest of your library</div>
+    <h2>8 more free guides</h2>
+    <p>Tap any cover to open it. Save them to your phone so you always have them.</p>
+    <div class="lib">
+      <a href="https://drive.google.com/file/d/1v5i9kqoGs_E5lOzxx0rKkJK9pF_ZI3S5/view" target="_blank"><img src="data:image/webp;base64,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" alt=""><b>The CSV backup guide</b><span>Open ›</span></a>
+      <a href="https://justin-vault-assets.pages.dev/free/100-claude-prompts.pdf" target="_blank"><img src="https://justin-vault-assets.pages.dev/free2/prompts.webp" alt=""><b>100 Claude prompts</b><span>Open ›</span></a>
+      <a href="https://justin-vault-assets.pages.dev/free/100-claude-commands.pdf" target="_blank"><img src="https://justin-vault-assets.pages.dev/free2/commands.webp" alt=""><b>100 Claude commands</b><span>Open ›</span></a>
+      <a href="https://justin-vault-assets.pages.dev/free/100-product-ideas.pdf" target="_blank"><img src="https://justin-vault-assets.pages.dev/free2/ideas100.webp" alt=""><b>100 digital product ideas</b><span>Open ›</span></a>
+      <a href="https://justin-vault-assets.pages.dev/free/50-hooks.pdf" target="_blank"><img src="https://justin-vault-assets.pages.dev/free2/hooks.webp" alt=""><b>50 hooks by funnel stage</b><span>Open ›</span></a>
+      <a href="https://justin-vault-assets.pages.dev/free/dm-scripts.pdf" target="_blank"><img src="https://justin-vault-assets.pages.dev/free2/dm.webp" alt=""><b>The DM scripts</b><span>Open ›</span></a>
+      <a href="https://justin-vault-assets.pages.dev/free/30-post-ideas.pdf" target="_blank"><img src="https://justin-vault-assets.pages.dev/free2/ideas.webp" alt=""><b>30 post ideas</b><span>Open ›</span></a>
+      <a href="https://justin-vault-assets.pages.dev/free/6-trust-templates.pdf" target="_blank"><img src="https://justin-vault-assets.pages.dev/free2/trust.webp" alt=""><b>6 trust post templates</b><span>Open ›</span></a>
+      <a href="https://justin-vault-assets.pages.dev/free/first-hour-checklist.pdf" target="_blank"><img src="https://justin-vault-assets.pages.dev/free2/checklist.webp" alt=""><b>The first-hour checklist</b><span>Open ›</span></a>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="n">Commented CLAUDE?</div>
+    <h2>Build your own ManyChat with Claude</h2>
+    <p>Here's the exact prompt I used to build my own comment-to-DM bot. Copy it, paste it into Claude Code, and Claude walks you through every step.</p>
+    <a class="btn" href="https://justin-vault-assets.pages.dev/claude/" target="_blank">GET THE PROMPT</a>
+  </div>
+
+  <p class="fine">Not affiliated with or endorsed by Anthropic. Claude is a trademark of Anthropic.</p>
+</div>
